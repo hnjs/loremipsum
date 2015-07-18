@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lorem Ipsum Generator</title>
+	<!--
+	<link rel="stylesheet" type="text/css" href="bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="myStyles.css">
+	-->
+</head>
+<body>
+	<div class="container">
+		<div>
+			<h4>Lorem Ipsum Generator</h4>
+		</div>
+		<form action="/" method="POST">
+			<div class="bg-info">
+				<input type="radio" name="units" value="words" checked="checked"></input>
+				<label class = "optLbl" for="words"> Words</label><br>
+				<input type="radio" name="units" value="sentences"></input>
+				<label class = "optLbl" for="sentences"> Sentences</label><br>
+				<input type="radio" name="units" value="paragraphs"></input>
+				<label class = "optLbl" for="paragraphs"> Paragraphs</label><br>
+			</div>
+			<div class="bg-warning">
+				<label for="units">Units</label>
+				<input type="text" name = "count" placeHolder="0" size=5></input><br>
+			</div>
+			<div>
+				<input class="btn btn-success" type="submit" value="Generate Lorem Ipsum" id="generate"></input>
+			</div>
+		</form>
